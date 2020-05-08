@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "069EC9F5-4150-4694-B453-C9BAB48798B5"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69DCB8E5-677E-4CAE-ACD5-042AF7C60DEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EpifiAssignment/Requests/FlickrRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "fetch(pageNumber:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "69DCB8E5-677E-4CAE-ACD5-042AF7C60DEC - d1a6661dab3bfe5f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EpifiAssignment.HTTPClientResult) -&gt; () in EpifiAssignment.FlickrRequest.fetch(pageNumber: Swift.UInt, completion: (Swift.Result&lt;EpifiAssignment.FlickrResponse, EpifiAssignment.HTTPClientError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EpifiAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saalisumer/Documents/EpifiAssignment/EpifiAssignment/Requests/FlickrRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "69DCB8E5-677E-4CAE-ACD5-042AF7C60DEC - d1a6661dab3bfe5f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EpifiAssignment.HTTPClientResult) -&gt; () in EpifiAssignment.FlickrRequest.fetch(pageNumber: Swift.UInt, completion: (Swift.Result&lt;EpifiAssignment.FlickrResponse, EpifiAssignment.HTTPClientError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EpifiAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saalisumer/Documents/EpifiAssignment/EpifiAssignment/Requests/FlickrRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F14D2209-6C34-4F05-A5DA-910D3492844C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EpifiAssignment/ResponseMapper/FlickrResponseMapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "map(_:response:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

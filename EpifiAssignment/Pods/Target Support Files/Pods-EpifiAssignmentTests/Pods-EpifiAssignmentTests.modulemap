@@ -1,0 +1,6 @@
+framework module Pods_EpifiAssignmentTests {
+  umbrella header "Pods-EpifiAssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

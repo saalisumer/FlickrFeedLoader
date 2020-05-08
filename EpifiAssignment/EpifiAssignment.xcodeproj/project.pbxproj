@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FB0F69F9633619B707C42FF /* Pods_EpifiAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2940108316C1C97B63D5BCC6 /* Pods_EpifiAssignmentTests.framework */; };
+		2D1D13721605C1F7C97E5335 /* Pods_EpifiAssignment_EpifiAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81010E498E2A4F0D41E630F /* Pods_EpifiAssignment_EpifiAssignmentUITests.framework */; };
+		703230842465BA0C003257B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230832465BA0C003257B1 /* AppDelegate.swift */; };
+		7032308B2465BA0C003257B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703230892465BA0C003257B1 /* Main.storyboard */; };
+		7032308D2465BA0E003257B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7032308C2465BA0E003257B1 /* Assets.xcassets */; };
+		703230902465BA0E003257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7032308E2465BA0E003257B1 /* LaunchScreen.storyboard */; };
+		703230B52465BAF8003257B1 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230B42465BAF8003257B1 /* HTTPClient.swift */; };
+		703230B72465BB52003257B1 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230B62465BB52003257B1 /* URLSessionHTTPClient.swift */; };
+		703230C02465C0B2003257B1 /* FlickrRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230BF2465C0B2003257B1 /* FlickrRequest.swift */; };
+		703230C32465C18A003257B1 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230C22465C18A003257B1 /* BaseRequest.swift */; };
+		703230C62465C1CE003257B1 /* URLRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230C52465C1CE003257B1 /* URLRequestHelper.swift */; };
+		703230C92465CBD8003257B1 /* FlickrItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230C82465CBD8003257B1 /* FlickrItem.swift */; };
+		703230CB2465CC00003257B1 /* FlickrResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230CA2465CC00003257B1 /* FlickrResponse.swift */; };
+		703230CE2465CD4B003257B1 /* FlickrResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230CD2465CD4B003257B1 /* FlickrResponseMapper.swift */; };
+		703230D32465D291003257B1 /* FlickrFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230D22465D291003257B1 /* FlickrFeedViewController.swift */; };
+		703230DA2465D5DB003257B1 /* FlickrFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230D92465D5DB003257B1 /* FlickrFeedViewModel.swift */; };
+		703230DC2465D8E6003257B1 /* FlickrItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230DB2465D8E6003257B1 /* FlickrItemViewModel.swift */; };
+		703230DF2465DAD1003257B1 /* RequestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230DE2465DAD1003257B1 /* RequestUtil.swift */; };
+		703230E12465DE2A003257B1 /* FlickrFeedRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230E02465DE2A003257B1 /* FlickrFeedRefreshController.swift */; };
+		703230E32465E627003257B1 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230E22465E627003257B1 /* GlobalFunctions.swift */; };
+		703230E62465EA19003257B1 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703230E52465EA19003257B1 /* ImageCell.xib */; };
+		703230E82465EA44003257B1 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230E72465EA44003257B1 /* ImageCell.swift */; };
+		703230EB2465F7E4003257B1 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230EA2465F7E4003257B1 /* FeedDetailViewController.swift */; };
+		703230ED2465FC29003257B1 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703230EC2465FC29003257B1 /* Date+Formatter.swift */; };
+		FD267BCC41D4E7A36F70A055 /* Pods_EpifiAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C63B42F4FCF09E8DAB1EFE /* Pods_EpifiAssignment.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		703230972465BA0E003257B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 703230782465BA0C003257B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7032307F2465BA0C003257B1;
+			remoteInfo = EpifiAssignment;
+		};
+		703230A22465BA0E003257B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 703230782465BA0C003257B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7032307F2465BA0C003257B1;
+			remoteInfo = EpifiAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2940108316C1C97B63D5BCC6 /* Pods_EpifiAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpifiAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD495AB2491B77B420C41FE /* Pods-EpifiAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpifiAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-EpifiAssignmentTests/Pods-EpifiAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		31B875230B3494D77065DC5A /* Pods-EpifiAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpifiAssignment.debug.xcconfig"; path = "Target Support Files/Pods-EpifiAssignment/Pods-EpifiAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		3AD43FB974030F6123C3451F /* Pods-EpifiAssignment-EpifiAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpifiAssignment-EpifiAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-EpifiAssignment-EpifiAssignmentUITests/Pods-EpifiAssignment-EpifiAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60CDDFDE4700CF52EFA502FA /* Pods-EpifiAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpifiAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-EpifiAssignmentTests/Pods-EpifiAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		703230802465BA0C003257B1 /* EpifiAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpifiAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		703230832465BA0C003257B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7032308A2465BA0C003257B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7032308C2465BA0E003257B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7032308F2465BA0E003257B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		703230912465BA0E003257B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		703230962465BA0E003257B1 /* EpifiAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpifiAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7032309C2465BA0E003257B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		703230A12465BA0E003257B1 /* EpifiAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpifiAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		703230A72465BA0E003257B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		703230B42465BAF8003257B1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		703230B62465BB52003257B1 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		703230BF2465C0B2003257B1 /* FlickrRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrRequest.swift; sourceTree = "<group>"; };
+		703230C22465C18A003257B1 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		703230C52465C1CE003257B1 /* URLRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestHelper.swift; sourceTree = "<group>"; };
+		703230C82465CBD8003257B1 /* FlickrItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrItem.swift; sourceTree = "<group>"; };
+		703230CA2465CC00003257B1 /* FlickrResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrResponse.swift; sourceTree = "<group>"; };
+		703230CD2465CD4B003257B1 /* FlickrResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrResponseMapper.swift; sourceTree = "<group>"; };
+		703230D22465D291003257B1 /* FlickrFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrFeedViewController.swift; sourceTree = "<group>"; };
+		703230D92465D5DB003257B1 /* FlickrFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrFeedViewModel.swift; sourceTree = "<group>"; };
+		703230DB2465D8E6003257B1 /* FlickrItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrItemViewModel.swift; sourceTree = "<group>"; };
+		703230DE2465DAD1003257B1 /* RequestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtil.swift; sourceTree = "<group>"; };
+		703230E02465DE2A003257B1 /* FlickrFeedRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrFeedRefreshController.swift; sourceTree = "<group>"; };
+		703230E22465E627003257B1 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		703230E52465EA19003257B1 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		703230E72465EA44003257B1 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		703230EA2465F7E4003257B1 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		703230EC2465FC29003257B1 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		C1966A12948CED63ECFE2044 /* Pods-EpifiAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpifiAssignment.release.xcconfig"; path = "Target Support Files/Pods-EpifiAssignment/Pods-EpifiAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		C84AC0A2B418B12A66D20A21 /* Pods-EpifiAssignment-EpifiAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpifiAssignment-EpifiAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-EpifiAssignment-EpifiAssignmentUITests/Pods-EpifiAssignment-EpifiAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6C63B42F4FCF09E8DAB1EFE /* Pods_EpifiAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpifiAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81010E498E2A4F0D41E630F /* Pods_EpifiAssignment_EpifiAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpifiAssignment_EpifiAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7032307D2465BA0C003257B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD267BCC41D4E7A36F70A055 /* Pods_EpifiAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		703230932465BA0E003257B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB0F69F9633619B707C42FF /* Pods_EpifiAssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7032309E2465BA0E003257B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1D13721605C1F7C97E5335 /* Pods_EpifiAssignment_EpifiAssignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54B5FFF53A0DF8C991A43E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C63B42F4FCF09E8DAB1EFE /* Pods_EpifiAssignment.framework */,
+				E81010E498E2A4F0D41E630F /* Pods_EpifiAssignment_EpifiAssignmentUITests.framework */,
+				2940108316C1C97B63D5BCC6 /* Pods_EpifiAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E7F1A9BADB07F45DF3C6881 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B875230B3494D77065DC5A /* Pods-EpifiAssignment.debug.xcconfig */,
+				C1966A12948CED63ECFE2044 /* Pods-EpifiAssignment.release.xcconfig */,
+				3AD43FB974030F6123C3451F /* Pods-EpifiAssignment-EpifiAssignmentUITests.debug.xcconfig */,
+				C84AC0A2B418B12A66D20A21 /* Pods-EpifiAssignment-EpifiAssignmentUITests.release.xcconfig */,
+				60CDDFDE4700CF52EFA502FA /* Pods-EpifiAssignmentTests.debug.xcconfig */,
+				2AD495AB2491B77B420C41FE /* Pods-EpifiAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		703230772465BA0C003257B1 = {
+			isa = PBXGroup;
+			children = (
+				703230822465BA0C003257B1 /* EpifiAssignment */,
+				703230992465BA0E003257B1 /* EpifiAssignmentTests */,
+				703230A42465BA0E003257B1 /* EpifiAssignmentUITests */,
+				703230812465BA0C003257B1 /* Products */,
+				5E7F1A9BADB07F45DF3C6881 /* Pods */,
+				54B5FFF53A0DF8C991A43E81 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		703230812465BA0C003257B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				703230802465BA0C003257B1 /* EpifiAssignment.app */,
+				703230962465BA0E003257B1 /* EpifiAssignmentTests.xctest */,
+				703230A12465BA0E003257B1 /* EpifiAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		703230822465BA0C003257B1 /* EpifiAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				703230D82465D5CC003257B1 /* ViewModel */,
+				703230CF2465D26B003257B1 /* UI */,
+				703230CC2465CD3C003257B1 /* ResponseMapper */,
+				703230C72465CBC0003257B1 /* Model */,
+				703230C42465C1B0003257B1 /* Util */,
+				703230BE2465C0A6003257B1 /* Requests */,
+				703230B32465BACC003257B1 /* Networking */,
+				703230832465BA0C003257B1 /* AppDelegate.swift */,
+				7032308C2465BA0E003257B1 /* Assets.xcassets */,
+				7032308E2465BA0E003257B1 /* LaunchScreen.storyboard */,
+				703230912465BA0E003257B1 /* Info.plist */,
+			);
+			path = EpifiAssignment;
+			sourceTree = "<group>";
+		};
+		703230992465BA0E003257B1 /* EpifiAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				7032309C2465BA0E003257B1 /* Info.plist */,
+			);
+			path = EpifiAssignmentTests;
+			sourceTree = "<group>";
+		};
+		703230A42465BA0E003257B1 /* EpifiAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				703230A72465BA0E003257B1 /* Info.plist */,
+			);
+			path = EpifiAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		703230B32465BACC003257B1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				703230B42465BAF8003257B1 /* HTTPClient.swift */,
+				703230B62465BB52003257B1 /* URLSessionHTTPClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		703230BE2465C0A6003257B1 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				703230DD2465DAC3003257B1 /* RequestUtil */,
+				703230C12465C178003257B1 /* BaseRequest */,
+				703230BF2465C0B2003257B1 /* FlickrRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		703230C12465C178003257B1 /* BaseRequest */ = {
+			isa = PBXGroup;
+			children = (
+				703230C22465C18A003257B1 /* BaseRequest.swift */,
+			);
+			path = BaseRequest;
+			sourceTree = "<group>";
+		};
+		703230C42465C1B0003257B1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				703230C52465C1CE003257B1 /* URLRequestHelper.swift */,
+				703230E22465E627003257B1 /* GlobalFunctions.swift */,
+				703230EC2465FC29003257B1 /* Date+Formatter.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		703230C72465CBC0003257B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				703230CA2465CC00003257B1 /* FlickrResponse.swift */,
+				703230C82465CBD8003257B1 /* FlickrItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		703230CC2465CD3C003257B1 /* ResponseMapper */ = {
+			isa = PBXGroup;
+			children = (
+				703230CD2465CD4B003257B1 /* FlickrResponseMapper.swift */,
+			);
+			path = ResponseMapper;
+			sourceTree = "<group>";
+		};
+		703230CF2465D26B003257B1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				703230E42465EA0A003257B1 /* Cell */,
+				703230D42465D2AD003257B1 /* Storyboard */,
+				703230D02465D271003257B1 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		703230D02465D271003257B1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				703230E92465F7D2003257B1 /* FeedDetailViewController */,
+				703230D12465D27F003257B1 /* FlickrFeedViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		703230D12465D27F003257B1 /* FlickrFeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				703230D22465D291003257B1 /* FlickrFeedViewController.swift */,
+				703230E02465DE2A003257B1 /* FlickrFeedRefreshController.swift */,
+			);
+			path = FlickrFeedViewController;
+			sourceTree = "<group>";
+		};
+		703230D42465D2AD003257B1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				703230892465BA0C003257B1 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		703230D82465D5CC003257B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				703230D92465D5DB003257B1 /* FlickrFeedViewModel.swift */,
+				703230DB2465D8E6003257B1 /* FlickrItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		703230DD2465DAC3003257B1 /* RequestUtil */ = {
+			isa = PBXGroup;
+			children = (
+				703230DE2465DAD1003257B1 /* RequestUtil.swift */,
+			);
+			path = RequestUtil;
+			sourceTree = "<group>";
+		};
+		703230E42465EA0A003257B1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				703230E52465EA19003257B1 /* ImageCell.xib */,
+				703230E72465EA44003257B1 /* ImageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		703230E92465F7D2003257B1 /* FeedDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				703230EA2465F7E4003257B1 /* FeedDetailViewController.swift */,
+			);
+			path = FeedDetailViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7032307F2465BA0C003257B1 /* EpifiAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 703230AA2465BA0E003257B1 /* Build configuration list for PBXNativeTarget "EpifiAssignment" */;
+			buildPhases = (
+				5D2176D78503A6BEAD2C19AD /* [CP] Check Pods Manifest.lock */,
+				7032307C2465BA0C003257B1 /* Sources */,
+				7032307D2465BA0C003257B1 /* Frameworks */,
+				7032307E2465BA0C003257B1 /* Resources */,
+				649F2EB596F5C17617267554 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpifiAssignment;
+			productName = EpifiAssignment;
+			productReference = 703230802465BA0C003257B1 /* EpifiAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		703230952465BA0E003257B1 /* EpifiAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 703230AD2465BA0E003257B1 /* Build configuration list for PBXNativeTarget "EpifiAssignmentTests" */;
+			buildPhases = (
+				13E7AC80F5D41B973B88D339 /* [CP] Check Pods Manifest.lock */,
+				703230922465BA0E003257B1 /* Sources */,
+				703230932465BA0E003257B1 /* Frameworks */,
+				703230942465BA0E003257B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				703230982465BA0E003257B1 /* PBXTargetDependency */,
+			);
+			name = EpifiAssignmentTests;
+			productName = EpifiAssignmentTests;
+			productReference = 703230962465BA0E003257B1 /* EpifiAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		703230A02465BA0E003257B1 /* EpifiAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 703230B02465BA0E003257B1 /* Build configuration list for PBXNativeTarget "EpifiAssignmentUITests" */;
+			buildPhases = (
+				2FAF9C2CF977717DCEFFCDDE /* [CP] Check Pods Manifest.lock */,
+				7032309D2465BA0E003257B1 /* Sources */,
+				7032309E2465BA0E003257B1 /* Frameworks */,
+				7032309F2465BA0E003257B1 /* Resources */,
+				9AA8A75419813B6C63CED02F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				703230A32465BA0E003257B1 /* PBXTargetDependency */,
+			);
+			name = EpifiAssignmentUITests;
+			productName = EpifiAssignmentUITests;
+			productReference = 703230A12465BA0E003257B1 /* EpifiAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		703230782465BA0C003257B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Saalis Umer";
+				TargetAttributes = {
+					7032307F2465BA0C003257B1 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					703230952465BA0E003257B1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+						TestTargetID = 7032307F2465BA0C003257B1;
+					};
+					703230A02465BA0E003257B1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7032307F2465BA0C003257B1;
+					};
+				};
+			};
+			buildConfigurationList = 7032307B2465BA0C003257B1 /* Build configuration list for PBXProject "EpifiAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 703230772465BA0C003257B1;
+			productRefGroup = 703230812465BA0C003257B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7032307F2465BA0C003257B1 /* EpifiAssignment */,
+				703230952465BA0E003257B1 /* EpifiAssignmentTests */,
+				703230A02465BA0E003257B1 /* EpifiAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7032307E2465BA0C003257B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703230902465BA0E003257B1 /* LaunchScreen.storyboard in Resources */,
+				703230E62465EA19003257B1 /* ImageCell.xib in Resources */,
+				7032308D2465BA0E003257B1 /* Assets.xcassets in Resources */,
+				7032308B2465BA0C003257B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		703230942465BA0E003257B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7032309F2465BA0E003257B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13E7AC80F5D41B973B88D339 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EpifiAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FAF9C2CF977717DCEFFCDDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EpifiAssignment-EpifiAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2176D78503A6BEAD2C19AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EpifiAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		649F2EB596F5C17617267554 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EpifiAssignment/Pods-EpifiAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EpifiAssignment/Pods-EpifiAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EpifiAssignment/Pods-EpifiAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA8A75419813B6C63CED02F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EpifiAssignment-EpifiAssignmentUITests/Pods-EpifiAssignment-EpifiAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EpifiAssignment-EpifiAssignmentUITests/Pods-EpifiAssignment-EpifiAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EpifiAssignment-EpifiAssignmentUITests/Pods-EpifiAssignment-EpifiAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7032307C2465BA0C003257B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703230C02465C0B2003257B1 /* FlickrRequest.swift in Sources */,
+				703230C92465CBD8003257B1 /* FlickrItem.swift in Sources */,
+				703230DC2465D8E6003257B1 /* FlickrItemViewModel.swift in Sources */,
+				703230D32465D291003257B1 /* FlickrFeedViewController.swift in Sources */,
+				703230B72465BB52003257B1 /* URLSessionHTTPClient.swift in Sources */,
+				703230C32465C18A003257B1 /* BaseRequest.swift in Sources */,
+				703230E82465EA44003257B1 /* ImageCell.swift in Sources */,
+				703230842465BA0C003257B1 /* AppDelegate.swift in Sources */,
+				703230E12465DE2A003257B1 /* FlickrFeedRefreshController.swift in Sources */,
+				703230C62465C1CE003257B1 /* URLRequestHelper.swift in Sources */,
+				703230CB2465CC00003257B1 /* FlickrResponse.swift in Sources */,
+				703230EB2465F7E4003257B1 /* FeedDetailViewController.swift in Sources */,
+				703230E32465E627003257B1 /* GlobalFunctions.swift in Sources */,
+				703230B52465BAF8003257B1 /* HTTPClient.swift in Sources */,
+				703230DA2465D5DB003257B1 /* FlickrFeedViewModel.swift in Sources */,
+				703230CE2465CD4B003257B1 /* FlickrResponseMapper.swift in Sources */,
+				703230ED2465FC29003257B1 /* Date+Formatter.swift in Sources */,
+				703230DF2465DAD1003257B1 /* RequestUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		703230922465BA0E003257B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7032309D2465BA0E003257B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		703230982465BA0E003257B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7032307F2465BA0C003257B1 /* EpifiAssignment */;
+			targetProxy = 703230972465BA0E003257B1 /* PBXContainerItemProxy */;
+		};
+		703230A32465BA0E003257B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7032307F2465BA0C003257B1 /* EpifiAssignment */;
+			targetProxy = 703230A22465BA0E003257B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		703230892465BA0C003257B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7032308A2465BA0C003257B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7032308E2465BA0E003257B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7032308F2465BA0E003257B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		703230A82465BA0E003257B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		703230A92465BA0E003257B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		703230AB2465BA0E003257B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B875230B3494D77065DC5A /* Pods-EpifiAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52345Q2QW;
+				INFOPLIST_FILE = EpifiAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epifi.EpifiAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		703230AC2465BA0E003257B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1966A12948CED63ECFE2044 /* Pods-EpifiAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52345Q2QW;
+				INFOPLIST_FILE = EpifiAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epifi.EpifiAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		703230AE2465BA0E003257B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CDDFDE4700CF52EFA502FA /* Pods-EpifiAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52345Q2QW;
+				INFOPLIST_FILE = EpifiAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epifi.assignment.EpifiAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EpifiAssignmentTests/EpifiAssignmentTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpifiAssignment.app/EpifiAssignment";
+			};
+			name = Debug;
+		};
+		703230AF2465BA0E003257B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD495AB2491B77B420C41FE /* Pods-EpifiAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52345Q2QW;
+				INFOPLIST_FILE = EpifiAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epifi.assignment.EpifiAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EpifiAssignmentTests/EpifiAssignmentTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpifiAssignment.app/EpifiAssignment";
+			};
+			name = Release;
+		};
+		703230B12465BA0E003257B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD43FB974030F6123C3451F /* Pods-EpifiAssignment-EpifiAssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52345Q2QW;
+				INFOPLIST_FILE = EpifiAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epifi.assignment.EpifiAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EpifiAssignment;
+			};
+			name = Debug;
+		};
+		703230B22465BA0E003257B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84AC0A2B418B12A66D20A21 /* Pods-EpifiAssignment-EpifiAssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52345Q2QW;
+				INFOPLIST_FILE = EpifiAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epifi.assignment.EpifiAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EpifiAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7032307B2465BA0C003257B1 /* Build configuration list for PBXProject "EpifiAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				703230A82465BA0E003257B1 /* Debug */,
+				703230A92465BA0E003257B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		703230AA2465BA0E003257B1 /* Build configuration list for PBXNativeTarget "EpifiAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				703230AB2465BA0E003257B1 /* Debug */,
+				703230AC2465BA0E003257B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		703230AD2465BA0E003257B1 /* Build configuration list for PBXNativeTarget "EpifiAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				703230AE2465BA0E003257B1 /* Debug */,
+				703230AF2465BA0E003257B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		703230B02465BA0E003257B1 /* Build configuration list for PBXNativeTarget "EpifiAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				703230B12465BA0E003257B1 /* Debug */,
+				703230B22465BA0E003257B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 703230782465BA0C003257B1 /* Project object */;
+}

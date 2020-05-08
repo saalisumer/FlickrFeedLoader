@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 3.5)
+  - Toast
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - Toast
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 2ba86889675e0ac0246805d2b2eb75e31c0d027f
+
+COCOAPODS: 1.9.1
